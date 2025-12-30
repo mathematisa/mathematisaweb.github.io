@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // Adapted from https://github.com/rafgraph/spa-github-pages
+      const pathParts = location.pathname.split('/');
+      let currentPath = location.pathname;
+      if (currentPath.endsWith('/')) {
+        currentPath = currentPath.slice(0, -1);
+      }
+      if (currentPath !== '' && currentPath !== '/' && !currentPath.includes('.')) {
+        location.replace(location.origin + currentPath + '.html');
+      } else if (currentPath === '') {
+        location.replace(location.origin + '/index.html');
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
